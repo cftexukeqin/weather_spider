@@ -40,7 +40,7 @@ def main():
     # 根据列表的结构，按照温度进行排序
     data_lists.sort(key=lambda data:data['min_temp'])
 
-    all_data = data_lists[0:10]
+    all_data = data_lists[0:20]
     cities = list(map(lambda x:x['city'],all_data))
     temps = list(map(lambda x:x['min_temp'],all_data))
 
